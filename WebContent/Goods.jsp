@@ -80,7 +80,16 @@
 	<a href="#top" id="top"></a><!-- スクロールでここまで飛ぶ --><br>
 
 	<!-- トップ画面 -->
-	
+	<div class="slider">
+		<div class="slideSet">
+			<div class="slide">
+				<img src="./img/real01.jpeg" width="25%" height="25%">
+				<img src="./img/barusa02.jpeg" width="25%" height="25%">
+				<img src="./img/dorutomunto02.jpeg" width="25%" height="25%">
+				<img src="./img/yubentos02.jpeg" width="25%" height="25%">
+			</div>
+		</div>
+	</div>
 	
 	
 	<div>
