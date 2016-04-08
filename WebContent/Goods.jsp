@@ -10,38 +10,52 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="stylecss/bootstrap-select.min.css" rel="stylesheet" />
-	<link href="stylecss/Goods.css" rel="stylesheet">
-	<link href="img/fab.ico" rel="shortcut icon" /> <!-- favicon -->
-	<link href="stylecss/animate.css" rel="stylesheet"><!-- animation -->
-	<link href="http://cdn.jsdelivr.net/animatecss/3.1.0/animate.css" rel="stylesheet" /><!-- animation -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><!-- jQiery -->
-	<script type="text/javascript" src="js/wow.min.js"></script><!-- スクロールした時にアニメーションが発動するjs -->
-	<script type="text/javascript"><!-- スクロールの記述 -->
-		$(function() {
-			$('a[href^=#]').click(function() {
-				var speed = 1000;
-				var href = $(this).attr("href");
-				var target = $(href == "#" || href == "" ? 'html' : href);
-				var position = target.offset().top;
-				$("html, body").animate({
-					scrollTop : position
-				}, speed, "swing");
-				return false;
-			});
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="stylecss/bootstrap-select.min.css" rel="stylesheet" />
+<link href="stylecss/Goods.css" rel="stylesheet">
+<link href="img/fab.ico" rel="shortcut icon" />
+<!-- favicon -->
+<link href="stylecss/animate.css" rel="stylesheet">
+<!-- animation -->
+<link href="http://cdn.jsdelivr.net/animatecss/3.1.0/animate.css"
+	rel="stylesheet" />
+<!-- animation -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- jQiery -->
+<script type="text/javascript" src="js/wow.min.js"></script>
+<!-- スクロールした時にアニメーションが発動するjs -->
+<script type="text/javascript">
+<!-- スクロールの記述 -->
+	$(function() {
+		$('a[href^=#]').click(function() {
+			var speed = 1000;
+			var href = $(this).attr("href");
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			var position = target.offset().top;
+			$("html, body").animate({
+				scrollTop : position
+			}, speed, "swing");
+			return false;
 		});
-		function Gocart() {
-			if (document.forms.gocart.go.value == 1) {
-				var element = document.getElementById("cart");
-				var x = element.offsetLeft;
-				var y = element.offsetTop;
-				window.scrollTo(0, y);
-			}
+	});
+	function Gocart() {
+		if (document.forms.gocart.go.value == 1) {
+			var element = document.getElementById("cart");
+			var x = element.offsetLeft;
+			var y = element.offsetTop;
+			window.scrollTo(0, y);
 		}
-	</script>
-	<title>Stardusts Coffee</title>
+	}
+</script>
+
+<title>Stardusts Coffee</title>
+<style type="text/css">
+/* ここにスタイルシート */
+</style>
+<script src="./js/jquery-1.11.2.js"></script>
+
 </head>
 <body onload="Gocart()">
 	<s:form name="gocart">
@@ -77,39 +91,50 @@
 	</nav>
 	<!-- fixed navigationここまで -->
 
-	<a href="#top" id="top"></a><!-- スクロールでここまで飛ぶ --><br>
+	<a href="#top" id="top"></a>
+	<!-- スクロールでここまで飛ぶ -->
+	<br>
 
 	<!-- トップ画面 -->
 	<div class="slider">
 		<div class="slideSet">
-			<div class="slide">
-				<img src="./img/real01.jpeg" width="25%" height="25%">
-				<img src="./img/barusa02.jpeg" width="25%" height="25%">
-				<img src="./img/dorutomunto02.jpeg" width="25%" height="25%">
-				<img src="./img/yubentos02.jpeg" width="25%" height="25%">
-			</div>
+			<div class="slide">slide1</div>
+			<div class="slide">slide2</div>
+			<div class="slide">slide3</div>
+			<div class="slide">slide4</div>
+			<div class="slide">slide5</div>
+			<div class="slide">slide6</div>
+			<div class="slide">slide7</div>
+			<div class="slide">slide8</div>
 		</div>
 	</div>
-	
-	
+	<button class="slider-next">次へ</button>
+
+
 	<div>
-		<img class="topimg" src="img/GoodsTop2.jpg" alt="トップ画面" /><!-- 下地 -->
+		<img class="topimg" src="img/GoodsTop2.jpg" alt="トップ画面" />
+		<!-- 下地 -->
 		<div class="animated fadeIn" data-wow-delay="0s">
-			<img class="topimg" src="img/Title.png" alt="ロゴ" style="position: absolute"><!-- 重ねるロゴ -->
+			<img class="topimg" src="img/Title.png" alt="ロゴ"
+				style="position: absolute">
+			<!-- 重ねるロゴ -->
 		</div>
 	</div>
 
-	<a href="#top" id="bottom"></a><!-- トップへスクロールする場所 -->
+	<a href="#top" id="bottom"></a>
+	<!-- トップへスクロールする場所 -->
 	<!-- ボタンここから -->
 	<s:if test="%{#session.userName==null}">
 		<div class="Premium-button">
 			<s:form action="GoLoginAction">
-				<button type="submit" class="ghost-button action">Premium Login</button>
+				<button type="submit" class="ghost-button action">Premium
+					Login</button>
 			</s:form>
 		</div>
 		<div class="Twitter-button">
 			<s:form action="GoTwitterAction">
-				<button type="submit" class="ghost-button action">Twitter OAuth</button>
+				<button type="submit" class="ghost-button action">Twitter
+					OAuth</button>
 			</s:form>
 		</div>
 	</s:if>
@@ -121,11 +146,13 @@
 			<a href="#bottom"></a>
 		</s:if>
 		<s:else>
-			<s:property value="#session.userName" />様<br><br>
+			<s:property value="#session.userName" />様<br>
+			<br>
 		</s:else>
 		<s:property value="#session.shopName" />
 		へようこそ！
-	</h1><br>
+	</h1>
+	<br>
 	<!-- h1ここまで -->
 
 	<!-- 商品ドキュメント -->
@@ -135,25 +162,28 @@
 				<a href="#top" id="about"></a><br> <br> <br>
 				<div align="center">
 					<div class="wow animated fadeInDownBig" data-wow-offset="1">
-						<h3>８段階の焙煎<br></h3>
+						<h3>
+							８段階の焙煎<br>
+						</h3>
 					</div>
-				</div><br>
-				<font size="3" color="#424242">
+				</div>
+				<br> <font size="3" color="#424242">
 					コーヒーのロースト(焙煎度)は、8段階に分けられ、味や香りの特徴は以下の通り。
 					しかし、ライトやシナモンはやや酸味が強く出てしまうため、日本ではほぼ飲まれません。
 					日本で一般的に飲まれているのは下記のうちミディアム・ローストからイタリアンローストまでの6種類となっています。
-					是非お好みのローストをお探し、ご注文下さい。<br><br><br>
+					是非お好みのローストをお探し、ご注文下さい。<br> <br> <br>
 				</font>
 			</div>
 			<div class="col-xs-5 col-sm-5 col-md-5">
-			<br><br><br><br>
+				<br> <br> <br> <br>
 				<div class="frame">
 					<div align="center">
 						<img class="imgsizing" src="img/Roasting.jpg">
 					</div>
 				</div>
 			</div>
-		</div> <!-- //row// -->
+		</div>
+		<!-- //row// -->
 
 		<!-- table1ここから -->
 		<div align="center">
@@ -186,17 +216,21 @@
 					<td>イタリアン・ロースト<br>焙煎22分・L値：14.2
 					<td>カプチーノ、エスプレッソに最適。酸味はまったく無く、苦味とうまみが強く出る。そのため、ミルクなどで甘さを加えて飲むのに適している。
 
+
+
+
+					
 			</table>
 			<!-- table1ここまで -->
-		</div><!-- //container// -->
+		</div>
+		<!-- //container// -->
 	</div>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-6">
 				<!-- ここに画像を差し込む -->
-				<br>
-				<br>
+				<br> <br>
 				<div class="frame">
 					<img class="imgsizing" src="img/Grind.jpg">
 				</div>
@@ -214,8 +248,7 @@
 				荒く挽くことによって酸味が出やすくなっています。 また細かさ、粒度によって、抽出時間、抽出危惧が変わってくるため
 				ご家庭で挽かれる場合は適した危惧や粒度を知っておく必要があります。
 				それでは、以下からそれぞれ豆の挽き方による特徴と、適した抽出方法について見て行きましょう。 もちろん、ご注文は豆のままでもOKです。<br>
-			<br>
-			<br>
+				<br> <br>
 			</font>
 		</div>
 
@@ -228,14 +261,26 @@
 					<td>極細挽き<br>エスプレッソ、イブリック
 					<td>粒度は市販に白砂糖ほどです。この粒度で挽くためには、専用のミルが必要になります。粒度を高めると苦味が非常に強くなるため、エスプレッソコーヒーを入れる際に適しています。
 
+
+
+
+					
 				<tr class="active">
 					<td>細挽き<br>ウォータードリップ、ドリップ・メリタ
 					<td>粒度は粉の状態で市販されているコーヒーより、少々細かい程度となります。水出しのウィータードリップコーヒーやドリップ士気で苦味とコクを強調したい時にはこの粒度に設定します。
 
+
+
+
+					
 				<tr class="active">
 					<td>中細挽き<br>ドリップ式・メリタ＆カリタ
 					<td>粒度は市販のグラニュー糖ほどになります。市販の粉コーヒーに最も近く、一般的な粒度といえるでしょう。この粒度を基準とすることで、それぞれのコーヒーの粒度の違いがはっきりとしてわかります。
 
+
+
+
+					
 				<tr class="active">
 					<td>中挽き<br>ドリップ・カリタ式、サイフォン式、ストレーナー式
 					<td>粒度はグラニュー糖とザラメの間くらいです。熱湯の中に浸されるサイフォン式、ストレーナー式に適しています。
@@ -243,6 +288,10 @@
 					<td>粗挽き<br>コーヒーメーカー、パーコーレーター
 					<td>粒度は市販のザラメほどとなり、苦味が少なく酸味の強まる弾き方となります。直接湯え煮だすコーヒーメーカーに非常に適していると言えます。
 
+
+
+
+					
 			</table>
 		</div>
 	</div>
@@ -269,8 +318,7 @@
 					<div class="row">
 						<div class="wow animated fadeInLeft">
 							<div class="col-xs-5 col-sm-5 col-md-5" align="center">
-								<br>
-								<img class="media-object sizing"
+								<br> <img class="media-object sizing"
 									src="img/<s:property value="imageUrl"/>">
 							</div>
 							<div class="col-xs-7 col-sm-7 col-md-7" align="left">
@@ -280,8 +328,8 @@
 								産地：
 								<s:property value="directFrom" />
 								<br> 100グラム単価：
-								<s:property value="price" />円
-								<br>
+								<s:property value="price" />
+								円 <br>
 								<s:property value="description" />
 								<br>
 								<!-- 棒グラフ -->
@@ -391,8 +439,8 @@
 								産地：
 								<s:property value="directFrom" />
 								<br> 100グラム単価：
-								<s:property value="price" />円
-								<br>
+								<s:property value="price" />
+								円 <br>
 								<s:property value="description" />
 								<br> 苦さ
 								<s:property value="bitterness" />
@@ -422,8 +470,7 @@
 								</div>
 							</div>
 							<div class="col-xs-5 col-sm-5 col-md-5" align="center">
-								<br>
-								<img class="media-object sizing"
+								<br> <img class="media-object sizing"
 									src="img/<s:property value="imageUrl"/>">
 							</div>
 						</div>
@@ -497,23 +544,21 @@
 
 	<br>
 	<br>
-	<div class="container">
-
-	</div>
+	<div class="container"></div>
 
 	<!-- 以下、プレミア会員のみが見れる隠しページここから -->
 	<s:if test="%{#session.premiumId != null || #session.userName != null}">
-	<div class="container">
-	<hr style="border-color: #adff2f">
-		<div align="center">
-			<h2>Premium Course</h2>
-			<a href="#premiumgazou" id="premium"></a>
-			<p>
-				プレミア会員様特別メニュー(^^)v☆<br> 以下の商品をご到着時間に合わせてお作りいたします。<br>
-				１人でもプレミア会員様がいましたら、お連れ様の分もお作りいただけます。<br> お好みの焙煎度、挽き方でお待ちしております♪
-			</p>
+		<div class="container">
+			<hr style="border-color: #adff2f">
+			<div align="center">
+				<h2>Premium Course</h2>
+				<a href="#premiumgazou" id="premium"></a>
+				<p>
+					プレミア会員様特別メニュー(^^)v☆<br> 以下の商品をご到着時間に合わせてお作りいたします。<br>
+					１人でもプレミア会員様がいましたら、お連れ様の分もお作りいただけます。<br> お好みの焙煎度、挽き方でお待ちしております♪
+				</p>
+			</div>
 		</div>
-	</div>
 		<br>
 		<br>
 		<br>
@@ -530,12 +575,7 @@
 									src="img/<s:property value="premiumImageUrl"/>" width="220"
 									height="220">
 								<figcaption>
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
+									<br> <br> <br> <br> <br> <br>
 									<h5 class="white" align="center">
 										<s:property value="beanName" />
 									</h5>
@@ -557,58 +597,56 @@
 					<th class="col-xs-2 col-sm-2 col-md-2">挽き方
 					<th class="col-xs-1 col-sm-1 col-md-1">人数
 					<th class="col-xs-1 col-sm-1 col-md-1">¥/1杯
-					<th class="col-xs-1 col-sm-1 col-md-1">購入
-				<a id="premiumgazou"></a><!-- スクロールでここまで飛ぶ -->
-
-					<s:iterator value="#session.goodsInfoList">
+					<th class="col-xs-1 col-sm-1 col-md-1">購入 <a id="premiumgazou"></a>
+						<!-- スクロールでここまで飛ぶ --> <s:iterator value="#session.goodsInfoList">
 							<tr>
 								<td><s:property value="beanName" /> <s:form
-											action="PurchaseSelectAction">
-											<s:token />
-											<td><div class="dropdown">
-													<select name="beanRoast" class="selectpicker"
-														onchange="if(beanRoast.value == 0||beanGrind.value == 0||drink.value == 0){submit.disabled = true;}else{submit.disabled = false;}">
-														<option value="0">―</option>
-														<option value="1">ライト・ロースト</option>
-														<option value="2">シナモン・ロースト</option>
-														<option value="3">ミディアム・ロースト</option>
-														<option value="4">ハイ・ロースト</option>
-														<option value="5">シティ・ロースト</option>
-														<option value="6">フルシティ・ロースト</option>
-														<option value="7">フレンチ・ロースト</option>
-														<option value="8">イタリアン・ロースト</option>
-													</select> <input type="hidden" name="dropdown-value" value="">
-												</div>
-											<td><div class="dropdown">
-													<select name="beanGrind" class="selectpicker"
-														onchange="if(beanRoast.value == 0 ||beanGrind.value == 0||drink.value == 0){submit.disabled = true;}else{submit.disabled = false;}">
-														<option value="0">―</option>
-														<option value="1">極細挽き</option>
-														<option value="2">細挽き</option>
-														<option value="3">中細挽き</option>
-														<option value="4">中挽き</option>
-														<option value="5">粗挽き</option>
-													</select> <input type="hidden" name="dropdown-value" value="">
-												</div>
-											<td><div class="dropdown">
-													<select name="drink" class="selectpicker"
-														onchange="if(beanRoast.value == 0 ||beanGrind.value == 0||drink.value == 0){submit.disabled = true;}else{submit.disabled = false;}">
-														<option value="0">―</option>
-														<option value="1">1名</option>
-														<option value="2">2名</option>
-														<option value="3">3名</option>
-														<option value="4">4名</option>
-														<option value="5">5名</option>
-													</select>
-													<s:hidden name="goodsId" value="%{goodsId}" />
-													<s:hidden name="beanName" value="%{beanName}" />
-													<s:hidden name="price" value="%{price*2}" />
-													<input type="hidden" name="dropdown-value" value="">
-												</div>
-											<td><s:property value="%{price*2}" />円
-											<td><button class="btn btn-info" type="submit"
-													name="submit" disabled>Buy</button>
-										</s:form>
+										action="PurchaseSelectAction">
+										<s:token />
+										<td><div class="dropdown">
+												<select name="beanRoast" class="selectpicker"
+													onchange="if(beanRoast.value == 0||beanGrind.value == 0||drink.value == 0){submit.disabled = true;}else{submit.disabled = false;}">
+													<option value="0">―</option>
+													<option value="1">ライト・ロースト</option>
+													<option value="2">シナモン・ロースト</option>
+													<option value="3">ミディアム・ロースト</option>
+													<option value="4">ハイ・ロースト</option>
+													<option value="5">シティ・ロースト</option>
+													<option value="6">フルシティ・ロースト</option>
+													<option value="7">フレンチ・ロースト</option>
+													<option value="8">イタリアン・ロースト</option>
+												</select> <input type="hidden" name="dropdown-value" value="">
+											</div>
+										<td><div class="dropdown">
+												<select name="beanGrind" class="selectpicker"
+													onchange="if(beanRoast.value == 0 ||beanGrind.value == 0||drink.value == 0){submit.disabled = true;}else{submit.disabled = false;}">
+													<option value="0">―</option>
+													<option value="1">極細挽き</option>
+													<option value="2">細挽き</option>
+													<option value="3">中細挽き</option>
+													<option value="4">中挽き</option>
+													<option value="5">粗挽き</option>
+												</select> <input type="hidden" name="dropdown-value" value="">
+											</div>
+										<td><div class="dropdown">
+												<select name="drink" class="selectpicker"
+													onchange="if(beanRoast.value == 0 ||beanGrind.value == 0||drink.value == 0){submit.disabled = true;}else{submit.disabled = false;}">
+													<option value="0">―</option>
+													<option value="1">1名</option>
+													<option value="2">2名</option>
+													<option value="3">3名</option>
+													<option value="4">4名</option>
+													<option value="5">5名</option>
+												</select>
+												<s:hidden name="goodsId" value="%{goodsId}" />
+												<s:hidden name="beanName" value="%{beanName}" />
+												<s:hidden name="price" value="%{price*2}" />
+												<input type="hidden" name="dropdown-value" value="">
+											</div>
+										<td><s:property value="%{price*2}" />円
+										<td><button class="btn btn-info" type="submit"
+												name="submit" disabled>Buy</button>
+									</s:form>
 						</s:iterator>
 			</table>
 		</div>
@@ -619,7 +657,7 @@
 	<!-- 以下、プレミア会員のみが見れる隠しページここまで -->
 
 
-		<div class="container" align="center">
+	<div class="container" align="center">
 		<br>
 		<div class="container">
 			<hr style="border-color: #adff2f">
@@ -708,6 +746,22 @@
 	<script src="js/bootstrap-select.min.js"></script>
 	<script>
 		$(function() {
+			var slideWidth = $('.slide').outerWidth(); // .slideの幅を取得して代入
+			var slideNum = $('.slide').length; // .slideの数を取得して代入
+			var slideSetWidth = slideWidth * slideNum; // .slideの幅×数で求めた値を代入
+			$('.slideSet').css('width', slideSetWidth); // .slideSetのスタイルシートにwidth: slideSetWidthを指定
+			var sliding = function() {
+				$('.slideSet').animate({
+					left : -slideWidth
+				});
+			}
+			$('.slider-next').click(function() {
+				sliding();
+			});
+		});
+	</script>
+	<script>
+		$(function() {
 			$(".dropdown-menu li a")
 					.click(
 							function() {
@@ -726,7 +780,7 @@
 	<!-- セレクトタグ用 -->
 
 	<script type="text/javascript">
-	    $('.selectpicker').selectpicker({
+		$('.selectpicker').selectpicker({
 			style : 'btn-default',
 			size : 8
 		});
@@ -734,12 +788,11 @@
 
 
 	<script type="text/javascript">
-        $(window).on('load', function () {
-            $('.selectpicker').selectpicker({
-                'selectedText': 'cat'
-            });
-        });
-
+		$(window).on('load', function() {
+			$('.selectpicker').selectpicker({
+				'selectedText' : 'cat'
+			});
+		});
 	</script>
 	<script type="text/javascript">
 		function check() {
@@ -750,11 +803,15 @@
 			}
 		}
 	</script>
+
 	<!-- scriptここまで -->
 	<!-- 文字のアニメーションをモバイルでオフにする -->
 	<script>
-    new WOW({mobile: false}).init();
-  	</script>
+		new WOW({
+			mobile : false
+		}).init();
+	</script>
 	<!-- scriptここまで -->
+
 </body>
 </html>
