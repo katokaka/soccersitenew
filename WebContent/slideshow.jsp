@@ -7,7 +7,7 @@
 <title>preview06｜jQueryを使ったスライダーの作り方とその仕組み</title>
 <style type="text/css">
 .slider {
-	width: 500px;
+	width: 1060px;
 	height: 200px;
 	overflow: hidden;
 	position: relative;
@@ -18,28 +18,31 @@
 }
 
 .slider .slide {
-	width: 498px;
-	height: 198px;
+	width: 500px;
+	height: 200px;
+	margin:10px;
 	border: 1px solid #f00;
 	float: left;
 }
 </style>
-<script src="jquery-1.12.3.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
 </head>
 <body>
 
 	<div class="slider">
 		<div class="slideSet">
-			<div class="slide">slide1</div>
-			<div class="slide">slide2</div>
-			<div class="slide">slide3</div>
-			<div class="slide">slide4</div>
-			<div class="slide">slide5</div>
+			<div class="slide"><img src="./img/real04.jpeg" width="120%" height="120%"></div>
+			<div class="slide"><img src="./img/real05.jpeg" width="120%" height="120%"></div>
+			<div class="slide"><img src="./img/baruserona05.jpeg" width="120%" height="120%"></div>
+			<div class="slide"><img src="./img/baruserona06.jpeg"></div>
+			<div class="slide"><img src="./img/dorutomunto04.jpeg"></div>
 		</div>
 	</div>
+	<button class="slider-prev">前へ</button>
 	<button class="slider-next">次へ</button>
 
 	<script>
+		var slideCurrent = 0; // 現在地を示す変数
 		var slideWidth = $('.slide').outerWidth(); // .slideの幅を取得して代入
 		var slideNum = $('.slide').length; // .slideの数を取得して代入
 		var slideSetWidth = slideWidth * slideNum; // .slideの幅×数で求めた値を代入
@@ -47,13 +50,29 @@
 
 		// アニメーションを実行する独自関数
 		var sliding = function() {
-			$('.slideSet').animate({
-				left : -slideWidth
+			// slideCurrentが0以下だったら
+			if (slideCurrent < 0) {
+				slideCurrent = slideNum - 1;
+
+				// slideCurrentがslideNumを超えたら
+			} else if (slideCurrent > slideNum - 1) { // slideCUrrent >= slideNumでも可
+				slideCurrent = 0;
+
+			}
+			$('.slideSet').stop().animate({
+				left : slideCurrent * -slideWidth
 			});
 		}
 
+		// 前へボタンが押されたとき
+		$('.slider-prev').click(function() {
+			slideCurrent--;
+			sliding();
+		});
+
 		// 次へボタンが押されたとき
 		$('.slider-next').click(function() {
+			slideCurrent++;
 			sliding();
 		});
 	</script>

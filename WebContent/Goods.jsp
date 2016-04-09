@@ -54,8 +54,8 @@
 <style type="text/css">
 /* ここにスタイルシート */
 </style>
-<script src="./js/jquery-1.11.2.js"></script>
-
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
 </head>
 <body onload="Gocart()">
 	<s:form name="gocart">
