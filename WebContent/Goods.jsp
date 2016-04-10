@@ -53,6 +53,11 @@
 <title>Stardusts Coffee</title>
 <script src="js/jquery-1.11.2.js"></script>
 </head>
+<style type="text/css">
+#img-angle {
+	transform: rotateZ(10deg);
+}
+</style>
 <body onload="Gocart()">
 	<div id="backimg">
 		<s:form name="gocart">
@@ -146,7 +151,7 @@
 					<div align="center">
 						<div class="wow animated fadeInDownBig" data-wow-offset="1">
 							<h3>
-								注目の試合<br>
+								注目の試合、注目の観光スポットの贅沢セット !!<br>
 							</h3>
 						</div>
 					</div>
@@ -161,7 +166,7 @@
 					<br> <br> <br> <br>
 					<div class="frame">
 						<div align="center">
-							<img class="imgsizing" src="img/Roasting.jpg">
+							<img class="imgsizing" id="img-angle" src="img/kurashiko01.jpg">
 						</div>
 					</div>
 				</div>
@@ -172,20 +177,22 @@
 			<div align="center">
 				<table class="table table-bordered">
 					<tr class="active">
-						<th class="col-xs-3 col-sm-3 col-md-3">焙煎度
+						<th class="col-xs-3 col-sm-3 col-md-3">試合
 						<th class="col-xs-6 col-sm-6 col-md-6">特徴
 					<tr class="active">
-						<td>ライト・ロースト<br>焙煎12分・L値：30.2
-						<td>ほとんどコクが無く、コーヒーと言えないほど薄い
+						<td>レアルマドリードVSバルセロナ
+						<td>世界が大注目のクラシコの観戦、サンチャコベルナベウへの観光などのレアルファンには堪らないプラン!!
 					<tr class="active">
-						<td>シナモン・ロースト<br>焙煎13分・L値：27.3
-						<td>さっぱりしているが、酸味が強くコーヒーとしてはやや物足りない。
+						<td>バルセロナVSレアルマドリード
+						<td>世界が大注目のクラシコの観戦、カンプ・ノウへの観光などのバルサファンには堪らないプラン!!
 					<tr class="active">
-						<td>ミディアム・ロースト<br>焙煎15分・L値：24.2
-						<td>アメリカンローストとも呼ばれる。酸味が強く、苦味が少ない。豆を選びます。
+						<td>ドルトムントVSリバプール
+						<td>香川の恩師グロップとの師弟対決!!ドルトムントの本拠地、ヴェストファーレンシュタディオンへの観光など<br>香川ファンには堪らないプラン!!
+						
 					<tr class="active">
-						<td>ハイ・ロースト<br>焙煎17分・L値：21.5
-						<td>コーヒーとして飲まれる最もポピュラーなもの。酸味、苦味のバランスがよい
+						<td>ドルトムントVSバイエルン
+						<td>世界が大注目のドイツ天王山を決める試合!!ドルトムントの本拠地、ヴェストファーレンシュタディオンへの観光など<br>香川ファンには堪らないプラン!!
+						
 					<tr class="active">
 						<td>シティ・ロースト<br>焙煎18分・L値：18.5
 						<td>コーヒーの味が最も豊かに出るタイプ。
@@ -198,7 +205,6 @@
 					<tr class="active">
 						<td>イタリアン・ロースト<br>焙煎22分・L値：14.2
 						<td>カプチーノ、エスプレッソに最適。酸味はまったく無く、苦味とうまみが強く出る。そのため、ミルクなどで甘さを加えて飲むのに適している。
-
 
 
 
@@ -255,10 +261,12 @@
 
 
 
+
 						
 					<tr class="active">
 						<td>細挽き<br>ウォータードリップ、ドリップ・メリタ
 						<td>粒度は粉の状態で市販されているコーヒーより、少々細かい程度となります。水出しのウィータードリップコーヒーやドリップ士気で苦味とコクを強調したい時にはこの粒度に設定します。
+
 
 
 
@@ -279,6 +287,7 @@
 
 
 
+
 						
 					<tr class="active">
 						<td>中挽き<br>ドリップ・カリタ式、サイフォン式、ストレーナー式
@@ -286,6 +295,7 @@
 					<tr class="active">
 						<td>粗挽き<br>コーヒーメーカー、パーコーレーター
 						<td>粒度は市販のザラメほどとなり、苦味が少なく酸味の強まる弾き方となります。直接湯え煮だすコーヒーメーカーに非常に適していると言えます。
+
 
 
 

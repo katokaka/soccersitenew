@@ -72,6 +72,35 @@ create table reservation(
 	order_code int(10)
 );
 
+-- チケット名
+drop table if exists ticket;
+create table ticket(
+	ticket_id int not null primary key auto_increment,
+	match_name varchar(100) not null,
+	hotel varchar(50) not null,
+	airport enum('ファーストクラス','ビジネスクラス','エコノミークラス') not null,
+	price int,
+	bought_limit int,
+	match_img varchar(100),
+	hotel_img varchar(100)
+);
+
+-- ticket table insert
+insert into ticket
+(match_name,hotel,airpory, price,bought_limit,match_img,hotel_img)
+values
+('レアルマドリードVSバルセロナ','カサ キャンパー','ビジネスクラス',3000000,150,'./img/LesMiserable01.jpg'),
+('les miserables','A',6000,300,'./img/LesMiserable01.jpg'),
+('phantom of opera','S',36000,150,'./img/ThePhantomOfTheOpera02.jpg'),
+('phantom of opera','A',25000,300,'./img/ThePhantomOfTheOpera02.jpg'),
+('cats','S',9000,150,'./img/CATS01.jpg'),
+('cats','A',6000,300,'./img/CATS01.jpg'),
+('弱虫ペダル','S',11000,150,'./img/yowamushipedaru01.jpg'),
+('弱虫ペダル','A',8500,300,'./img/yowamushipedaru01.jpg'),
+('lion king','S',9000,150,'./img/LionKing01.jpeg'),
+('lion king','A',6500,300,'./img/LionKing01.jpeg');
+
+
 /* 購入履歴情報テーブル */
 drop table if exists history;
 create table history(
