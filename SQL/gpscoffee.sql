@@ -89,7 +89,46 @@ create table ticket(
 insert into ticket
 (match_name,hotel,airpory, price,bought_limit,match_img,hotel_img)
 values
-('レアルマドリードVSバルセロナ','カサ キャンパー','ビジネスクラス',3000000,150,'./img/LesMiserable01.jpg'),
+('レアルマドリードVSバルセロナ','Hotel The Serras','ファーストクラス',550000,150,'img/real6.jpg','img/the_serras_hotel.jpg'),
+('レアルマドリードVSバルセロナ','Hotel The Serras','ビジネスクラス',650000,150,'img/real02.jpeg','img/the_serras_hotel.jpg'),
+('レアルマドリードVSバルセロナ','Hotel The Serras','エコノミークラス',550000,150,'img/real03.jpeg','img/the_serras_hotel.jpg'),
+('レアルマドリードVSバルセロナ','カサ キャンパー','ファーストクラス',500000,150,'img/real6.jpg','img/ka-sakanpe-ru.jpg'),
+('レアルマドリードVSバルセロナ','カサ キャンパー','ビジネスクラス',400000,150,'img/real02.jpeg','img/ka-sakanpe-ru.jpg'),
+('レアルマドリードVSバルセロナ','カサ キャンパー','エコノミークラス',300000,150,'img/real03.jpg','img/ka-sakanpe-ru.jpg'),
+('レアルマドリードVSバルセロナ','ホテル1989','ファーストクラス',450000,150,'img/real6.jpg','img/Hotel1989.jpg'),
+('レアルマドリードVSバルセロナ','ホテル1989','ビジネスクラス',350000,150,'img/real02.jpeg','img/Hotel1989.jpg'),
+('レアルマドリードVSバルセロナ','ホテル1989','エコノミークラス',250000,150,'img/real03.jpeg','img/Hotel1989.jpg'),
+('バルセロナVSレアルマドリード','Hotel The Serras','ファーストクラス',550000,150,'img/barusa03.jpeg','img/the_serras_hotel.jpg'),
+('バルセロナVSレアルマドリード','Hotel The Serras','ビジネスクラス',650000,150,'img/baruserona02.jpg','img/the_serras_hotel.jpg'),
+('バルセロナVSレアルマドリード','Hotel The Serras','エコノミークラス',550000,150,'img/baruserona01.jpg','img/the_serras_hotel.jpg'),
+('バルセロナVSレアルマドリード','カサ キャンパー','ファーストクラス',500000,150,'img/barusa03.jpeg','img/ka-sakanpe-ru.jpg'),
+('バルセロナVSレアルマドリード','カサ キャンパー','ビジネスクラス',400000,150,'img/baruserona02.jpg','img/ka-sakanpe-ru.jpg'),
+('バルセロナVSレアルマドリード','カサ キャンパー','エコノミークラス',300000,150,'img/baruserona01.jpg','img/ka-sakanpe-ru.jpg'),
+('バルセロナVSレアルマドリード','ホテル1989','ファーストクラス',450000,150,'img/barusa03.jpeg','img/Hotel1989.jpg'),
+('バルセロナVSレアルマドリード','ホテル1989','ビジネスクラス',350000,150,'img/baruserona02.jpg','img/Hotel1989.jpg'),
+('バルセロナVSレアルマドリード','ホテル1989','エコノミークラス',250000,150,'img/baruserona01.jpg','img/Hotel1989.jpg'),
+('ドルトムントVSリバプール','ロッコ フォルテ ザ チャールズ ホテル','ファーストクラス',600000,150,'img/dorutomunto04.jpg','img/rokko_forute_cya-ruzu.jpeg'),
+('ドルトムントVSリバプール','ロッコ フォルテ ザ チャールズ ホテル','ビジネスクラス',550000,150,'imgdorutomunto05.jpg','img/rokko_forute_cya-ruzu.jpeg'),
+('ドルトムントVSリバプール','ロッコ フォルテ ザ チャールズ ホテル','エコノミークラス',500000,150,'img/dorutomunto06.jpg','img/rokko_forute_cya-ruzu.jpeg'),
+('ドルトムントVSリバプール','プラッツル ホテル ミュンヘン','ファーストクラス',550000,150,'img/dorutomunto04.jpg','img/platzl-hotel.jpg'),
+('ドルトムントVSリバプール','プラッツル ホテル ミュンヘン','ビジネスクラス',500000,150,'imgdorutomunto05.jpg','img/platzl-hotel.jpg'),
+('ドルトムントVSリバプール','プラッツル ホテル ミュンヘン','エコノミークラス',450000,150,'img/dorutomunto06.jpg','img/platzl-hotel.jpg'),
+('ドルトムントVSリバプール','マインガーホテル','ファーストクラス',500000,150,'img/dorutomunto04.jpg','img/maininngar.jpg'),
+('ドルトムントVSリバプール','マインガーホテル','ビジネスクラス',450000,150,'imgdorutomunto05.jpg','img/maininngar.jpg'),
+('ドルトムントVSリバプール','マインガーホテル','エコノミークラス',400000,150,'img/dorutomunto06.jpg','img/maininngar.jpg'),
+('ドルトムントVSバイエルン','ロッコ フォルテ ザ チャールズ ホテル','ファーストクラス',600000,150,'img/dorutomunto04.jpg','img/rokko_forute_cya-ruzu.jpeg'),
+('ドルトムントVSバイエルン','ロッコ フォルテ ザ チャールズ ホテル','ビジネスクラス',550000,150,'imgdorutomunto05.jpg','img/rokko_forute_cya-ruzu.jpeg'),
+('ドルトムントVSバイエルン','ロッコ フォルテ ザ チャールズ ホテル','エコノミークラス',500000,150,'img/dorutomunto06.jpg','img/rokko_forute_cya-ruzu.jpeg'),
+('ドルトムントVSバイエルン','プラッツル ホテル ミュンヘン','ファーストクラス',550000,150,'img/dorutomunto04.jpg','img/platzl-hotel.jpg'),
+('ドルトムントVSバイエルン','プラッツル ホテル ミュンヘン','ビジネスクラス',500000,150,'imgdorutomunto05.jpg','img/platzl-hotel.jpg'),
+('ドルトムントVSバイエルン','プラッツル ホテル ミュンヘン','エコノミークラス',450000,150,'img/dorutomunto06.jpg','img/platzl-hotel.jpg'),
+('ドルトムントVSバイエルン','マインガーホテル','ファーストクラス',500000,150,'img/dorutomunto04.jpg','img/maininngar.jpg'),
+('ドルトムントVSバイエルン','マインガーホテル','ビジネスクラス',450000,150,'imgdorutomunto05.jpg','img/maininngar.jpg'),
+('ドルトムントVSバイエルン','マインガーホテル','エコノミークラス',400000,150,'img/dorutomunto06.jpg','img/maininngar.jpg
+
+
+
+
 ('les miserables','A',6000,300,'./img/LesMiserable01.jpg'),
 ('phantom of opera','S',36000,150,'./img/ThePhantomOfTheOpera02.jpg'),
 ('phantom of opera','A',25000,300,'./img/ThePhantomOfTheOpera02.jpg'),

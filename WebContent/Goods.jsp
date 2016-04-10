@@ -748,7 +748,7 @@
 		</div>
 
 		<footer>
-			<div align="center">Copyright Stardusts All rights reserved.</div>
+			<div align="center">Copyright  SoccerMania All rights reserved.</div>
 			<br>
 		</footer>
 

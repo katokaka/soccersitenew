@@ -63,7 +63,7 @@
 				<div align="center">
 					<div class="wow animated fadeInDownBig" data-wow-offset="1">
 						<h3>
-							注目の試合、注目の観光スポットの贅沢セット !!<br>
+							注目の試合、注目のホテルの贅沢セット !!<br>
 						</h3>
 					</div>
 				</div>
