@@ -27,11 +27,11 @@
 			<td><img src="img/barusa03.jpeg" width="342px" height="232px"></td>
 		</tr>
 	</table>
-	<img name="myIMG" src="img/the_serras_hotel.jpg" class="image">
+	<img name="myIMG" src="img/the_serras_hotel05.jpg" class="image">
 	<br>
 	<form>
 		<input type="radio" name="myRB"
-			onClick="Gazou('img/the_serras_hotel.jpg')" checked>Hotel The Serras <input
+			onClick="Gazou('img/the_serras_hotel05.jpg')" checked>Hotel The Serras <input
 			type="radio" name="myRB" onClick="Gazou('img/ka-sakanpe-ru.jpg')">ペンギン
 		<input type="radio" name="myRB" onClick="Gazou('img/Hotel1989.jpg')">ねこ
 		<input type="radio" name="myRB" onClick="Gazou('images/icons4.gif')">ねずみ
