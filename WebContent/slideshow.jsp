@@ -29,12 +29,8 @@ p.resizeimage.slide img {
 	width: 100%;
 }
 
-.slider-position {
-	text-align: center;
-}
-
-.slider-position div {
-	text-align: left;
+.slider-position button{
+	margin:20px 20px;
 }
 
 </style>
@@ -62,13 +58,12 @@ p.resizeimage.slide img {
 			</p>
 		</div>
 	</div>
-	<div class="slider-position">
-		<div>
-			<button class="slider-prev">前へ</button>
-			<button class="slider-next">次へ</button>
+	<center>
+		<div class="slider-position">
+			<button class="slider-prev">←</button>
+			<button class="slider-next">→</button>
 		</div>
-	</div>
-
+	</center>
 	<script>
 		var slideCurrent = 0; // 現在地を示す変数
 		var slideWidth = $('.slide').outerWidth(); // .slideの幅を取得して代入

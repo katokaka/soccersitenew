@@ -51,9 +51,6 @@
 </script>
 
 <title>Stardusts Coffee</title>
-<style type="text/css">
-/* ここにスタイルシート */
-</style>
 <script src="js/jquery-1.11.2.js"></script>
 </head>
 <body onload="Gocart()">
@@ -97,15 +94,15 @@
 
 		<!-- トップ画面 -->
 		<jsp:include page="slideshow.jsp" />
-		<div>
-			<img class="topimg" src="img/GoodsTop2.jpg" alt="トップ画面" />
-			<!-- 下地 -->
+		<!-- <div> -->
+		<!-- 	<img class="topimg" src="img/GoodsTop2.jpg" alt="トップ画面" />
+			下地
 			<div class="animated fadeIn" data-wow-delay="0s">
 				<img class="topimg" src="img/Title.png" alt="ロゴ"
 					style="position: absolute">
-				<!-- 重ねるロゴ -->
+				重ねるロゴ
 			</div>
-		</div>
+		</div> -->
 
 		<a href="#top" id="bottom"></a>
 		<!-- トップへスクロールする場所 -->
@@ -149,7 +146,7 @@
 					<div align="center">
 						<div class="wow animated fadeInDownBig" data-wow-offset="1">
 							<h3>
-								８段階の焙煎<br>
+								注目の試合<br>
 							</h3>
 						</div>
 					</div>
