@@ -5,10 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>preview06｜jQueryを使ったスライダーの作り方とその仕組み</title>
+<link rel="stylesheet" href="./stylecss/reset.css">
 <style type="text/css">
 .slider {
-	width: 1060px;
-	height: 200px;
+	width: 1034px;
+	height: 681px;
 	overflow: hidden;
 	position: relative;
 }
@@ -18,24 +19,38 @@
 }
 
 .slider .slide {
-	width: 500px;
-	height: 200px;
-	margin:10px;
+	width: 1024px;
+	height: 681px;
 	border: 1px solid #f00;
 	float: left;
+}
+
+p.resizeimage.slide img {
+	width: 100%;
 }
 </style>
 <script src="js/jquery-1.12.3.min.js"></script>
 </head>
 <body>
-
 	<div class="slider">
 		<div class="slideSet">
-			<div class="slide"><img src="./img/real04.jpeg" width="120%" height="120%"></div>
-			<div class="slide"><img src="./img/real05.jpeg" width="120%" height="120%"></div>
-			<div class="slide"><img src="./img/baruserona05.jpeg" width="120%" height="120%"></div>
-			<div class="slide"><img src="./img/baruserona06.jpeg"></div>
-			<div class="slide"><img src="./img/dorutomunto04.jpeg"></div>
+			<p class="resizeimage">
+			<div class="slide">
+				<img src="./img/real04.jpg">
+			</div>
+			<div class="slide">
+				<img src="./img/real05.jpg">
+			</div>
+			<div class="slide">
+				<img src="./img/baruserona05.jpg">
+			</div>
+			<div class="slide">
+				<img src="./img/baruserona06.jpg">
+			</div>
+			<div class="slide">
+				<img src="./img/dorutomunto05.jpg">
+			</div>
+			</p>
 		</div>
 	</div>
 	<button class="slider-prev">前へ</button>
@@ -57,7 +72,6 @@
 				// slideCurrentがslideNumを超えたら
 			} else if (slideCurrent > slideNum - 1) { // slideCUrrent >= slideNumでも可
 				slideCurrent = 0;
-
 			}
 			$('.slideSet').stop().animate({
 				left : slideCurrent * -slideWidth

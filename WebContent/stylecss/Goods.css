@@ -8,6 +8,14 @@
 */
 
 /* TOP画像 */
+#backimg {
+	width: 1024px;
+	background-color: #ffffff;
+	margin: auto;
+	opacity: 0.8;
+}
+
+
 body {
 	font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo,
 		sans-serif;
