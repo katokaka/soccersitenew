@@ -50,7 +50,7 @@
 	}
 </script>
 
-<title>Stardusts Coffee</title>
+<title>SoccerMania</title>
 <script src="js/jquery-1.11.2.js"></script>
 </head>
 <style type="text/css">
@@ -98,7 +98,7 @@
 		<br>
 
 		<!-- トップ画面 -->
-		<jsp:include page="slideshow.jsp" />
+		<jsp:include page="slideshow02.jsp" />
 		<!-- <div> -->
 		<!-- 	<img class="topimg" src="img/GoodsTop2.jpg" alt="トップ画面" />
 			下地

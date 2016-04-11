@@ -113,31 +113,19 @@ values
 ('ドルトムントVSリバプール','プラッツル ホテル ミュンヘン','ファーストクラス',550000,150,'img/dorutomunto04.jpg','img/platzl-hotel.jpg'),
 ('ドルトムントVSリバプール','プラッツル ホテル ミュンヘン','ビジネスクラス',500000,150,'imgdorutomunto05.jpg','img/platzl-hotel.jpg'),
 ('ドルトムントVSリバプール','プラッツル ホテル ミュンヘン','エコノミークラス',450000,150,'img/dorutomunto06.jpg','img/platzl-hotel.jpg'),
-('ドルトムントVSリバプール','マインガーホテル','ファーストクラス',500000,150,'img/dorutomunto04.jpg','img/maininngar.jpg'),
-('ドルトムントVSリバプール','マインガーホテル','ビジネスクラス',450000,150,'imgdorutomunto05.jpg','img/maininngar.jpg'),
-('ドルトムントVSリバプール','マインガーホテル','エコノミークラス',400000,150,'img/dorutomunto06.jpg','img/maininngar.jpg'),
+('ドルトムントVSリバプール','カプリ バイ フレーザー フランクフルト','ファーストクラス',500000,150,'img/capri-by-fraser-frankfurt01.jpg','img/maininngar.jpg'),
+('ドルトムントVSリバプール','カプリ バイ フレーザー フランクフルト','ビジネスクラス',450000,150,'img/dorutomunto05.jpg','img/capri-by-fraser-frankfurt01.jpg'),
+('ドルトムントVSリバプール','カプリ バイ フレーザー フランクフルト','エコノミークラス',400000,150,'img/dorutomunto06.jpg','img/capri-by-fraser-frankfurt01.jpg'),
 ('ドルトムントVSバイエルン','ロッコ フォルテ ザ チャールズ ホテル','ファーストクラス',600000,150,'img/dorutomunto04.jpg','img/rokko_forute_cya-ruzu.jpeg'),
 ('ドルトムントVSバイエルン','ロッコ フォルテ ザ チャールズ ホテル','ビジネスクラス',550000,150,'imgdorutomunto05.jpg','img/rokko_forute_cya-ruzu.jpeg'),
 ('ドルトムントVSバイエルン','ロッコ フォルテ ザ チャールズ ホテル','エコノミークラス',500000,150,'img/dorutomunto06.jpg','img/rokko_forute_cya-ruzu.jpeg'),
 ('ドルトムントVSバイエルン','プラッツル ホテル ミュンヘン','ファーストクラス',550000,150,'img/dorutomunto04.jpg','img/platzl-hotel.jpg'),
 ('ドルトムントVSバイエルン','プラッツル ホテル ミュンヘン','ビジネスクラス',500000,150,'imgdorutomunto05.jpg','img/platzl-hotel.jpg'),
 ('ドルトムントVSバイエルン','プラッツル ホテル ミュンヘン','エコノミークラス',450000,150,'img/dorutomunto06.jpg','img/platzl-hotel.jpg'),
-('ドルトムントVSバイエルン','マインガーホテル','ファーストクラス',500000,150,'img/dorutomunto04.jpg','img/maininngar.jpg'),
-('ドルトムントVSバイエルン','マインガーホテル','ビジネスクラス',450000,150,'imgdorutomunto05.jpg','img/maininngar.jpg'),
-('ドルトムントVSバイエルン','マインガーホテル','エコノミークラス',400000,150,'img/dorutomunto06.jpg','img/maininngar.jpg
-
-
-
-
-('les miserables','A',6000,300,'./img/LesMiserable01.jpg'),
-('phantom of opera','S',36000,150,'./img/ThePhantomOfTheOpera02.jpg'),
-('phantom of opera','A',25000,300,'./img/ThePhantomOfTheOpera02.jpg'),
-('cats','S',9000,150,'./img/CATS01.jpg'),
-('cats','A',6000,300,'./img/CATS01.jpg'),
-('弱虫ペダル','S',11000,150,'./img/yowamushipedaru01.jpg'),
-('弱虫ペダル','A',8500,300,'./img/yowamushipedaru01.jpg'),
-('lion king','S',9000,150,'./img/LionKing01.jpeg'),
-('lion king','A',6500,300,'./img/LionKing01.jpeg');
+('ドルトムントVSバイエルン','カプリ バイ フレーザー フランクフルト','ファーストクラス',500000,150,'img/capri-by-fraser-frankfurt01.jpg','img/maininngar.jpg'),
+('ドルトムントVSバイエルン','カプリ バイ フレーザー フランクフルト','ビジネスクラス',450000,150,'img/dorutomunto05.jpg','img/capri-by-fraser-frankfurt01.jpg'),
+('ドルトムントVSバイエルン','カプリ バイ フレーザー フランクフルト','エコノミークラス',400000,150,'img/dorutomunto06.jpg','img/capri-by-fraser-frankfurt01.jpg'
+);
 
 
 /* 購入履歴情報テーブル */
