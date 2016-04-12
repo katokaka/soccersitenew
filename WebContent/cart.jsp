@@ -10,46 +10,70 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>cart</title>
+<style type="text/css">
+.cart-img {
+	width: 165px;
+	height: 110px;
+}
+
+.content {
+	width: 800x;
+	margin: 100px auto;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.set {
+	margin: 50px 100px;
+	padding: 20px; background-color : #ffffff;
+	overflow: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+.title {
+	padding: 0px 20px;
+	margin: 50px 100px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	overflow: hidden;
+}
+</style>
+
 <script type="text/javascript">
-	function foo() {
-		var x = document.getElementById("input").value;
-		var t = document.createTextNode('こんにちは，' + x + 'さん！');
-		var u = document.getElementById("output");
-		u.replaceChild(t, u.childNodes[0]);
-	};
+	function func() {
+		var xx = parseFloat(document.F1.T1.value);
+		var yy = parseFloat(document.F1.T2.value);
+		document.F1.T3.value = xx * yy;
+	}
 </script>
 
 </head>
 <body>
-	<h1>カート</h1>
-	<table>
-		<tr>
-			<td><img src="img/real6.jpg" class="cart-img"></td>
-			<td>試合名</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><img src="img/ka-sakanpe-ru.jpg" class="cart-img"></td>
-			<td>ホテル名</td>
-			<td>×</td>
-			<td><p>
-					<label for="input">お名前：</label> <input id="input" onchange="foo();">
-				</p>
-				<p id="output">出力欄：</p></td>
-		</tr>
-		<tr>
-			<td><img src="img/real6.jpg" class="cart-img"></td>
-			<td>飛行機</td>
-			<td>ファーストクラス</td>
-			<td></td>
-		</tr>
-		合計金額¥100,000-
-
-
-
-	</table>
-
-
+	<div class="content">
+		<div class="title">
+			<h1>カート</h1>
+		</div>
+		<div class="set">
+			<table>
+				<tr>
+					<td><img src="img/real6.jpg" class="cart-img"></td>
+					<td>試合名：レアルマドリード VSバルセロナ<br> ホテル名: <br> 飛行機：ファーストクラス<br>
+					</td>
+				</tr>
+			</table>
+			<p>
+			<form name="F1" action="#">
+				<input type="text" name="T1">
+				<output type="text" value="lot" />
+				円× <input type="text" name="T2">枚 <input type="button"
+					value="＝" onclick="func()"> 合計¥<input type="text" name="T3">-
+			</form>
+			</p>
+		</div>
+	</div>
 </body>
 </html>
