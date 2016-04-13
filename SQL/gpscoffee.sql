@@ -72,6 +72,44 @@ create table reservation(
 	order_code int(10)
 );
 
+/* カートの一時テーブル */
+drop table if exists cart_temp;
+create table cart_temp(
+	cart_temp_id int not null primary key auto_increment,
+	id int foreign key not null,
+	ticket_id int not null,
+	lot int,
+	match_name varchar(50),
+	hotel varchar(50),
+	airport enum('ファーストクラス','ビジネスクラス','エコノミークラス') 	
+	)
+
+/* カートのテーブル */
+drop table if exists cart;
+create table cart(
+	cart_id int not null primary key auto_increment,
+	cart_temp_id int not null,
+	id int not null,
+	ticket_id int not null,
+	lot int,
+	match_name varchar(50),
+	hotel varchar(50),
+	airport enum('ファーストクラス','ビジネスクラス','エコノミークラス'),
+	price varchar(50),
+	today varchar(50)
+)
+
+insert into cart
+(ticket_id,lot,match_name,hotel,airport, price)
+values
+(1,20,'レアルマドリードVSバルセロナ','Hotel The Serras','ファーストクラス',750000),
+(2,30,'レアルマドリードVSバルセロナ','Hotel The Serras','ビジネスクラス',650000),
+(18,40,'バルセロナVSレアルマドリード','ホテル1989','エコノミークラス',250000),
+(19,35,'ドルトムントVSリバプール','ロッコ フォルテ ザ チャールズ ホテル','ファーストクラス',600000)
+);
+
+
+
 -- チケット名
 drop table if exists ticket;
 create table ticket(
@@ -89,7 +127,7 @@ create table ticket(
 insert into ticket
 (match_name,hotel,airpory, price,bought_limit,match_img,hotel_img)
 values
-('レアルマドリードVSバルセロナ','Hotel The Serras','ファーストクラス',550000,150,'img/real6.jpg','img/the_serras_hotel.jpg'),
+('レアルマドリードVSバルセロナ','Hotel The Serras','ファーストクラス',750000,150,'img/real6.jpg','img/the_serras_hotel.jpg'),
 ('レアルマドリードVSバルセロナ','Hotel The Serras','ビジネスクラス',650000,150,'img/real02.jpeg','img/the_serras_hotel.jpg'),
 ('レアルマドリードVSバルセロナ','Hotel The Serras','エコノミークラス',550000,150,'img/real03.jpeg','img/the_serras_hotel.jpg'),
 ('レアルマドリードVSバルセロナ','カサ キャンパー','ファーストクラス',500000,150,'img/real6.jpg','img/ka-sakanpe-ru.jpg'),
