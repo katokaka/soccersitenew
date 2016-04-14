@@ -177,22 +177,38 @@
 			<div align="center">
 				<table class="table table-bordered">
 					<tr class="active">
+						<th>
 						<th class="col-xs-3 col-sm-3 col-md-3">試合
-						<th class="col-xs-6 col-sm-6 col-md-6">特徴
-					<tr class="active">
-						<td>レアルマドリードVSバルセロナ
-						<td>世界が大注目のクラシコの観戦、サンチャコベルナベウへの観光などのレアルファンには堪らないプラン!!
-					<tr class="active">
-						<td>バルセロナVSレアルマドリード
-						<td>世界が大注目のクラシコの観戦、カンプ・ノウへの観光などのバルサファンには堪らないプラン!!
-					<tr class="active">
-						<td>ドルトムントVSリバプール
-						<td>香川の恩師グロップとの師弟対決!!ドルトムントの本拠地、ヴェストファーレンシュタディオンへの観光など<br>香川ファンには堪らないプラン!!
-						
-					<tr class="active">
-						<td>ドルトムントVSバイエルン
-						<td>世界が大注目のドイツ天王山を決める試合!!ドルトムントの本拠地、ヴェストファーレンシュタディオンへの観光など<br>香川ファンには堪らないプラン!!
-						
+						<th class="col-xs-6 col-sm-6 col-md-6">特徴 <s:form
+								action="GoMatchDetailAction">
+								<tr class="active">
+									<td><s:submit type="button" value="詳細へ" />
+									<td name="matchName">レアルマドリード VS バルセロナ</td>
+									<td>世界が大注目のクラシコ の観戦、カ ンプ・ノウへの観光などのバルサファンには堪らないプラン!!</td>
+								</tr>
+							</s:form> <s:form action="GoMatchDetailAction">
+								<tr class="active">
+									<td><s:submit type="button" value="詳細へ" /></td>
+
+									<td name="matchName">バルセロナVSレアルマドリード</td>
+
+									<td>世界が大注目のクラシコ の観戦、カ ンプ・ノウへの観光などのバルサファンには堪らないプラン!!</td>
+								</tr>
+							</s:form> <s:form action="GoMatchDetailAction">
+								<tr class="active">
+									<td><s:submit type="button" value="詳細へ" /></td>
+									<td name="matchName">ドルトムントVSリバプール</td>
+									<td>香川の恩師グロップとの師弟対決!!ドルトムントの本拠地、ヴェストファーレンシュタディオンへの観光など<br>香川ファンには堪らないプラン!!
+									</td>
+								</tr>
+							</s:form> <s:form action="GoMatchDetailAction">
+								<tr class="active">
+									<td><s:submit type="button" value="詳細へ" /></td>
+									<td name="matchName">ドルトムントVSバイエルン</td>
+									<td>世界が大注目のドイツ天王山を決める試合!!ドルトムントの本拠地、ヴェストファーレンシュタディオンへの観光など<br>香川ファンには堪らないプラン!!
+									</td>
+								</tr>
+							</s:form>
 					<tr class="active">
 						<td>シティ・ロースト<br>焙煎18分・L値：18.5
 						<td>コーヒーの味が最も豊かに出るタイプ。
@@ -205,6 +221,11 @@
 					<tr class="active">
 						<td>イタリアン・ロースト<br>焙煎22分・L値：14.2
 						<td>カプチーノ、エスプレッソに最適。酸味はまったく無く、苦味とうまみが強く出る。そのため、ミルクなどで甘さを加えて飲むのに適している。
+
+
+
+
+
 
 
 
@@ -262,10 +283,20 @@
 
 
 
+
+
+
+
+
 						
 					<tr class="active">
 						<td>細挽き<br>ウォータードリップ、ドリップ・メリタ
 						<td>粒度は粉の状態で市販されているコーヒーより、少々細かい程度となります。水出しのウィータードリップコーヒーやドリップ士気で苦味とコクを強調したい時にはこの粒度に設定します。
+
+
+
+
+
 
 
 
@@ -288,6 +319,11 @@
 
 
 
+
+
+
+
+
 						
 					<tr class="active">
 						<td>中挽き<br>ドリップ・カリタ式、サイフォン式、ストレーナー式
@@ -295,6 +331,11 @@
 					<tr class="active">
 						<td>粗挽き<br>コーヒーメーカー、パーコーレーター
 						<td>粒度は市販のザラメほどとなり、苦味が少なく酸味の強まる弾き方となります。直接湯え煮だすコーヒーメーカーに非常に適していると言えます。
+
+
+
+
+
 
 
 
@@ -700,8 +741,10 @@
 								<td><s:property value="price" />円</td>
 								<td><s:property value="totalAmount" />円</td>
 							</tr>
+
 						</s:if>
 					</s:iterator>
+
 				</table>
 				<br>
 				<table class="table table-bordered table-hover">
@@ -748,7 +791,7 @@
 		</div>
 
 		<footer>
-			<div align="center">Copyright  SoccerMania All rights reserved.</div>
+			<div align="center">Copyright SoccerMania All rights reserved.</div>
 			<br>
 		</footer>
 
