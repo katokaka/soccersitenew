@@ -8,60 +8,55 @@
 */
 
 /* TOP画像 */
-#backimg {
-	width: 1024px;
-	background-color: #ffffff;
-	margin: auto;
-	opacity: 0.8;
+body{
+	font-family:  "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
 }
 
-
-body {
-	font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo,
-		sans-serif;
-}
-
-.topimg {
-	width: 100%;
-	top: -10%;
-	position: relative;
+.topimg{
+	width:100%;
+	top:-10%;
+	position:relative;
 }
 
 .ghost-button {
 	display: inline-block;
-	width: 200px;
-	height: 40px;
-	margin: 0px;
+  	width: 200px;
+  	height: 40px;
+ 	margin: 0px;
 	padding: 5px;
-	background: rgba(0, 0, 0, 0.25);;
+	background: rgba(0,0,0,0.25);;
 	color: #fff;
 	text-decoration: none;
-	font-weight: bold;
+  	font-weight: bold;
 	border: 2px hidden #fff;
 	text-align: center;
 	outline: none;
 	transition: 0.5s;
-	text-align: center;
+	text-align:center;
 }
 
-.ghost-button:hover, .ghost-button:active {
-	color: #333;
-	background: #fff;
+.ghost-button:hover,
+.ghost-button:active {
+  color: #333;
+  background: #fff;
 }
 
-.Premium-button {
-	position: absolute;
-	top: 30%;
-	right: 100px;
-	text-align: center
+
+.Premium-button{
+ position: absolute;
+ top: 30%;
+ right: 100px;
+ text-align:center
 }
 
-.Twitter-button {
-	position: absolute;
-	top: 50%;
-	right: 100px;
-	text-align: center
+.Twitter-button{
+ position: absolute;
+ top: 50%;
+ right: 100px;
+ text-align:center
 }
+
+
 
 /*プレミアの画像にマスクをかける*/
 figure {
@@ -69,7 +64,6 @@ figure {
 	overflow: hidden;
 	width: 220px;
 }
-
 figcaption {
 	position: absolute;
 	top: 0;
@@ -77,23 +71,20 @@ figcaption {
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0,0,0,0.6);
 	-webkit-transition: .3s;
 	transition: .3s;
 	opacity: 0;
 }
-
 figure:hover figcaption {
 	opacity: 1;
 }
 
 /*マスク上の文字を白くする*/
-.white {
-	color: white;
-}
+.white { color:white; }
 
 /* 焙煎とグラインドの横の画像サイズ指定 */
-.imgsizing {
+.imgsizing{
 	height: 250px;
 	width: auto;
 }
@@ -104,7 +95,6 @@ figure:hover figcaption {
 	position: relative;
 	opacity: 0.8;
 }
-
 .frame:after {
 	position: absolute;
 	display: block;
@@ -113,32 +103,11 @@ figure:hover figcaption {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(left, rgba(255, 255, 255, 0) 40%, #fff 100%);
-	/* 塗りつぶす */
+	background: linear-gradient(left, rgba(255, 255, 255, 0) 40%, #fff 100%); /* 塗りつぶす */
 }
 
-.sizing {
+
+.sizing{
 	width: 250px;
 	height: auto;
-}
-
-.slider .slide {
-	width: 310px;
-	height: 158px;
-	margin: 10px;
-	TOP:60px;
-	border: 1px solid #f00;
-	float: left;
-}
-
-.slider .slideSet {
-	width: 2640px;
-	position: absolute;
-}
-
-.slider {
-	width: 650px;
-	height: 170px;
-	overflow: hidden;
-	position: relative;
 }
